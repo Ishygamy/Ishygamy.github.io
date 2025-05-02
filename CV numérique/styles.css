@@ -1,0 +1,108 @@
+/* Modernisation du design du CV */
+
+/* En-tête avec un dégradé bleu foncé */
+header {
+    background: linear-gradient(135deg, #002147, #004d7a);
+    color: white;
+    text-align: left;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 3px solid #004d7a;
+}
+
+/* Conteneur principal modernisé */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barre latérale */
+.sidebar {
+    width: 100%;
+    max-width: 280px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections et titres modernisés */
+.nom_section {
+    color: #004d7a;
+    font-size: 1.4em;
+    border-bottom: 2px solid #004d7a;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Barres de progression améliorées */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 12px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #004d7a, #007bb5);
+    transition: width 0.5s;
+}
+
+/* Liens modernisés */
+.lien {
+    color: #004d7a;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.lien:hover {
+    color: #007bb5;
+    text-decoration: underline;
+}
+
+/* Contenu principal modernisé */
+.content {
+    flex-grow: 1;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adaptabilité pour mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid #004d7a;
+    }
+}
+
+.retour {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.retour:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
