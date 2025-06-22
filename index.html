@@ -69,8 +69,38 @@
     </section>
 
     <section id="tp-td">
-        <h2>Travaux Pratiques et Devoirs</h2>
-        <p>Cette section regroupe l'ensemble des travaux pratiques et devoirs réalisés tout au long de l'année. Vous y trouverez des exercices en programmation, des mises en situation professionnelles ainsi que des projets réalisés dans le cadre du BTS SIO.</p>
+         <h2>Mes TP et TD</h2>
+
+    <div class="folder" onclick="toggleFolder(this)">
+      <div class="folder-header">
+        📁 SLAM <span class="arrow">▶</span>
+      </div>
+      <div class="folder-content">
+        <a href="TP3-Les_bases_de_la_POO_en_JAVA.pdf" target="_blank">TP 3 - Les bases de la OO en JAVA</a>
+      </div>
+    </div>
+
+    <div class="folder" onclick="toggleFolder(this)">
+      <div class="folder-header">
+        📁 Cyber <span class="arrow">▶</span>
+      </div>
+      <div class="folder-content">
+        <a href="TD3-Thème_2-Defiguration-site-Web.pdf" target="_blank">TD 3 - Thème 2 - Analyse de risques</a>
+        <a href="TD-thème_4-Archivage.pdf" target="_blank">TP - Thème 4 - Archivage</a>
+      </div>
+    </div>
+
+    <div class="folder" onclick="toggleFolder(this)">
+      <div class="folder-header">
+        📁 Réseau <span class="arrow">▶</span>
+      </div>
+      <div class="folder-content">
+        <a href="TP2-cryptographie.pdf" target="_blank">TP 2 - Cryptographie</a>
+        <a href="TP3-Utilisateurs_et_droits_sous_linux.pdf" target="_blank">TP 3 - Utilisateurs et droits sous linux</a>
+        <a href="TP4-Partitionnement.pdf" target="_blank">TP 4 - Partitionnement</a>
+      </div>
+    </div>
+
     </section>
     
     <section id="contact">
@@ -83,5 +113,10 @@
     </section>
     
     <script src="script.js"></script>
+    <script>
+    function toggleFolder(folder) {
+      folder.classList.toggle("open");
+    }
+    </script>
 </body>
 </html>
