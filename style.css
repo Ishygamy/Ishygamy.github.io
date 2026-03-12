@@ -7,11 +7,14 @@ body {
     }
 
     header {
+        position: fixed;
+        top: 0;
         background: #1a252f;
         color: white;
         text-align: center;
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
     }
 
     nav ul {
@@ -153,4 +156,61 @@ body {
 
     .folder-content a:hover {
       text-decoration: underline;
+    }
+
+    .principaux {
+        border: 2px solid #4A90E2;
+        background-color: #f5f9ff;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .principaux:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .secondaires {
+        border: 1px solid #d6d6d6;
+        background-color: #fafafa;
+        padding: 16px;
+        margin: 15px 0;
+        border-radius: 8px;
+        color: #444;
+        transition: background-color 0.2s ease;
+    }
+
+    .secondaires:hover {
+        background-color: #f0f0f0;
+    }
+
+    #toggleSecondaires {
+        background-color: #4A90E2;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-bottom: 20px;
+        transition: background-color 0.2s ease;
+    }
+
+    #toggleSecondaires:hover {
+        background-color: #357ABD;
+    }
+
+    #introduction {
+      margin-top: 200px;
+    }
+
+    #about {
+      margin-top: 200px;
+    }
+
+    #Information {
+      margin-top: 175px;
     }
