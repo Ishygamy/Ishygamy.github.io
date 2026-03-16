@@ -237,7 +237,7 @@ body {
         
         background: #f6f8fc;
         
-        border-left: 6px solid #ff7900;
+        border-left: 6px solid #350da3;
         
         border-radius: 8px;
         
@@ -252,5 +252,5 @@ body {
         }
         
         .intro-card strong{
-            color:#ff7900;
+            color:#350da3;
         }
