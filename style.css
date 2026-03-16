@@ -230,25 +230,22 @@ body {
     html {
         scroll-behavior: smooth;
     }
-
-        /* Carte de contenu pour les introductions */
+    .intro-card{
+        max-width: 900px;
+        margin: 25px auto;
+        padding: 25px 30px;
         
-        .intro-card{
-            max-width: 900px;
-            margin: 25px auto;
-            padding: 25px 30px;
+        background: #f6f8fc;
         
-            background: #f6f8fc;
+        border-left: 6px solid #ff7900;
         
-            border-left: 6px solid #ff7900;
+        border-radius: 8px;
         
-            border-radius: 8px;
+        line-height: 1.7;
+        font-size: 17px;
         
-            line-height: 1.7;
-            font-size: 17px;
-        
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
         
         .intro-card p{
             margin-bottom: 15px;
