@@ -2,6 +2,7 @@ body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        padding-top: 160px; /* espace pour la navbar */
         background: linear-gradient(to right, #2c3e50, #4ca1af);
         color: #333;
     }
@@ -15,6 +16,27 @@ body {
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .header-top {
+        transition: all 0.3s ease;
+    }
+
+    /* navbar compacte */
+    header.shrink {
+        padding: 8px 20px;
+    }
+
+    /* cache nom + classe */
+    header.shrink .header-top {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    header.shrink h1 {
+        font-size: 20px;
     }
 
     nav ul {
@@ -46,6 +68,8 @@ body {
         border-radius: 10px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         margin-top: 30px;
+
+        scroll-margin-top: 140px; /* hauteur de ta navbar */
     }
 
     h2 {
@@ -203,14 +227,6 @@ body {
         background-color: #357ABD;
     }
 
-    #introduction {
-      margin-top: 200px;
-    }
-
-    #about {
-      margin-top: 200px;
-    }
-
-    #Information {
-      margin-top: 175px;
+    html {
+        scroll-behavior: smooth;
     }
